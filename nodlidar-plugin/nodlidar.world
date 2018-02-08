@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- A testing model that includes the lidar sensor model -->
+    <model name="my_nodlidar">
+      <include>
+        <uri>model://nodlidar</uri>
+      </include>
+
+      <!-- Attach the plugin to this model -->
+      <plugin name="nodlidar_control" filename="libnodlidar_plugin.so"/>
+    </model>
+  </world>
+</sdf>
