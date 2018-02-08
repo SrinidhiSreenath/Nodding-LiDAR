@@ -1,0 +1,8 @@
+This contains the Gazebo control plugin for the sensor.
+
+The plugin has to be built using the following commands
+
+cd ~/nodlidar_plugin/build
+cmake ../
+make
+gazebo --verbose ../nodlidar.world
