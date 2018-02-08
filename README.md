@@ -1,4 +1,4 @@
-# Noddlng-LiDAR
+# Nodding-LiDAR
 Contains the gazebo model file and the gazebo control plugin for a nodding Hokuyo URG 04LX sensor with added gaussian noise.
 
 This contains 2 folders -
